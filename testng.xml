@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/rihal/Downloads/conduitAngularAutomation">
+        <classes>
+            <class name="TestCases.ArticlePageTest">
+                <methods>
+                    <include name="publish"/>
+                    <include name="delete"/>
+                </methods>
+            </class>
+            <class name="TestCases.HomePageTest">
+                <methods>
+                    <include name="verifyTitleTest"/>
+                </methods>
+            </class>
+            <class name="TestCases.LoginPageTest">
+                <methods>
+                    <include name="loginValidation"/>
+                </methods>
+            </class>
+            <class name="TestCases.SettingsUpdateTest">
+                <methods>
+                    <include name="profileUpdateTest"/>
+                    <include name="logout"/>
+                </methods>
+            </class>
+            <class name="TestCases.SignUpPageTest">
+                <methods>
+                    <include name="registrationTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
